@@ -64,7 +64,7 @@ def plot_data(H_C_data):
         plt.plot(H_C_data["Year"], H_C_data["timeoccurence@Coldest"], color='b', marker='o', label = "coldest")
         H_C_data["timeoccurence@Hottest"] = H_C_data["timeoccurence@Hottest"].dt.strftime("%H:%M")
         H_C_data["timeoccurence@Coldest"] = H_C_data["timeoccurence@Coldest"].dt.strftime("%H:%M")
-        plt.title("colddd")
+        plt.title("hottest&coldest@year")
         data_format_x = mpl_dates.DateFormatter('%H:%M')
         plt.gca().yaxis.set_major_formatter(data_format_x)
         
